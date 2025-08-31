@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <title>About - TrendHive</title>
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+      <link href="assets/img/favicon.png" rel="icon">
+      <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+      <link href="https://fonts.googleapis.com" rel="preconnect">
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+         rel="stylesheet">
+      <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+      <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+      <link href="assets/css/main.css" rel="stylesheet">
+   </head>
+   <body class="about-page">
+      <header id="header" class="header sticky-top">
+         <div class="main-header">
+            <div class="container-fluid container-xl">
+               <div class="d-flex py-3 align-items-center justify-content-between">
+                  <a href="index.html" class="logo d-flex align-items-center">
+                     <h1 class="sitename">TrendHive</h1>
+                  </a>
+                  <form class="search-form desktop-search-form">
+                     <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for products">
+                        <button class="btn" type="submit">
+                        <i class="bi bi-search"></i>
+                        </button>
+                     </div>
+                  </form>
+                  <div class="header-actions d-flex align-items-center justify-content-end">
+                     <button class="header-action-btn mobile-search-toggle d-xl-none" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#mobileSearch" aria-expanded="false" aria-controls="mobileSearch">
+                     <i class="bi bi-search"></i>
+                     </button>
+                     <div class="dropdown account-dropdown">
+                        <button class="header-action-btn" data-bs-toggle="dropdown">
+                        <i class="bi bi-person"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                           <div class="dropdown-header">
+                              <h6>Welcome to <span class="sitename">TrendHive</span></h6>
+                              <p class="mb-0">Access account &amp; manage orders</p>
+                           </div>
+                           <div class="dropdown-body">
+                              <a class="dropdown-item d-flex align-items-center" href="#">
+                              <i class="bi bi-person-circle me-2"></i>
+                              <span>My Profile</span>
+                              </a>
+                              <a class="dropdown-item d-flex align-items-center" href="#">
+                              <i class="bi bi-bag-check me-2"></i>
+                              <span>My Orders</span>
+                              </a>
+                              <a class="dropdown-item d-flex align-items-center" href="#">
+                              <i class="bi bi-heart me-2"></i>
+                              <span>My Wishlist</span>
+                              </a>
+                              <a class="dropdown-item d-flex align-items-center" href="#">
+                              <i class="bi bi-gear me-2"></i>
+                              <span>Settings</span>
+                              </a>
+                           </div>
+                           <div class="dropdown-footer">
+                              <a href="#" class="btn btn-primary w-100 mb-2">Sign In</a>
+                              <a href="#" class="btn btn-outline-primary w-100">Register</a>
+                           </div>
+                        </div>
+                     </div>
+                     <a href="#" class="header-action-btn d-none d-md-block">
+                     <i class="bi bi-heart"></i>
+                     <span class="badge">0</span>
+                     </a>
+                     <a href="cart.html" class="header-action-btn">
+                     <i class="bi bi-cart3"></i>
+                     <span class="badge">3</span>
+                     </a>
+                     <i class="mobile-nav-toggle d-xl-none bi bi-list me-0"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="header-nav">
+            <div class="container-fluid container-xl position-relative">
+               <nav id="navmenu" class="navmenu">
+                  <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="about.html" class="active">About</a></li>
+                     <li><a href="category.html">Category</a></li>
+                     <li><a href="product-details.html">Product Details</a></li>
+                     <li><a href="contact.html">Contact</a></li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+         <div class="collapse" id="mobileSearch">
+            <div class="container">
+               <form class="search-form">
+                  <div class="input-group">
+                     <input type="text" class="form-control" placeholder="Search for products">
+                     <button class="btn" type="submit">
+                     <i class="bi bi-search"></i>
+                     </button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </header>
+      <main class="main">
+         <div class="page-title light-background">
+            <div class="container d-lg-flex justify-content-between align-items-center">
+               <h1 class="mb-2 mb-lg-0">About</h1>
+               <nav class="breadcrumbs">
+                  <ol>
+                     <li><a href="index.html">Home</a></li>
+                     <li class="current">About</li>
+                  </ol>
+               </nav>
+            </div>
+         </div>
+         <section class="aboutpage-hero-section" data-aos="fade-up" data-aos-delay="100">
+            <div class="container">
+               <div class="row align-items-center g-4">
+                  <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+                     <div class="aboutpage-hero-content">
+                        <span class="aboutpage-section-badge">
+                        <i class="bi bi-heart-fill"></i>
+                        Our Story
+                        </span>
+                        <h1 class="aboutpage-hero-title">Fashion That Speaks <span class="aboutpage-accent">Your Language</span>
+                        </h1>
+                        <p class="aboutpage-hero-description">Since 2018, TrendHive has been curating premium fashion pieces that
+                           blend contemporary style with timeless elegance. We believe every person deserves to express their
+                           unique personality through quality clothing that makes them feel confident and beautiful.
+                        </p>
+                        <div class="aboutpage-hero-stats">
+                           <div class="aboutpage-stat-item">
+                              <h3>50K+</h3>
+                              <span>Happy Customers</span>
+                           </div>
+                           <div class="aboutpage-stat-item">
+                              <h3>1000+</h3>
+                              <span>Premium Products</span>
+                           </div>
+                           <div class="aboutpage-stat-item">
+                              <h3>25+</h3>
+                              <span>Global Brands</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+                     <div class="aboutpage-hero-image">
+                        <div class="aboutpage-image-container">
+                           <img src="assets/img/about/about-wide-1.webp" alt="Our Fashion Journey" class="aboutpage-main-image">
+                           <div class="aboutpage-floating-badge">
+                              <div class="aboutpage-badge-content">
+                                 <i class="bi bi-award-fill"></i>
+                                 <span>Est. 2018</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="aboutpage-mission-section light-background" data-aos="fade-up" data-aos-delay="100">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-8 mx-auto text-center mb-5">
+                     <span class="aboutpage-section-badge">
+                     <i class="bi bi-compass"></i>
+                     Our Mission
+                     </span>
+                     <h2 class="aboutpage-section-title">Redefining Fashion Excellence</h2>
+                     <p class="aboutpage-section-description">We're committed to providing exceptional fashion experiences that
+                        empower individuals to express their authentic selves through carefully curated, high-quality clothing and
+                        accessories.
+                     </p>
+                  </div>
+               </div>
+               <div class="row g-4 mb-5">
+                  <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                     <div class="aboutpage-value-card">
+                        <div class="aboutpage-value-icon">
+                           <i class="bi bi-gem"></i>
+                        </div>
+                        <h3 class="aboutpage-value-title">Premium Quality</h3>
+                        <p class="aboutpage-value-description">Every piece in our collection is carefully selected for its
+                           superior craftsmanship, premium materials, and exceptional attention to detail.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                     <div class="aboutpage-value-card">
+                        <div class="aboutpage-value-icon">
+                           <i class="bi bi-recycle"></i>
+                        </div>
+                        <h3 class="aboutpage-value-title">Sustainability</h3>
+                        <p class="aboutpage-value-description">We partner with eco-conscious brands and promote sustainable
+                           fashion practices to protect our planet for future generations.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                     <div class="aboutpage-value-card">
+                        <div class="aboutpage-value-icon">
+                           <i class="bi bi-people-fill"></i>
+                        </div>
+                        <h3 class="aboutpage-value-title">Inclusivity</h3>
+                        <p class="aboutpage-value-description">Fashion is for everyone. We celebrate diversity and offer styles
+                           that cater to all body types, preferences, and lifestyles.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="aboutpage-mission-image-section" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="row align-items-center g-4">
+                     <div class="col-lg-6">
+                        <div class="aboutpage-mission-content">
+                           <h3 class="aboutpage-mission-subtitle">Why Choose TrendHive?</h3>
+                           <div class="aboutpage-feature-list">
+                              <div class="aboutpage-feature-item">
+                                 <i class="bi bi-check-circle-fill"></i>
+                                 <span>Curated collections from top global designers</span>
+                              </div>
+                              <div class="aboutpage-feature-item">
+                                 <i class="bi bi-check-circle-fill"></i>
+                                 <span>Exceptional customer service and support</span>
+                              </div>
+                              <div class="aboutpage-feature-item">
+                                 <i class="bi bi-check-circle-fill"></i>
+                                 <span>Fast, reliable worldwide shipping</span>
+                              </div>
+                              <div class="aboutpage-feature-item">
+                                 <i class="bi bi-check-circle-fill"></i>
+                                 <span>Easy returns and exchanges</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <div class="aboutpage-feature-image">
+                           <img src="assets/img/about/about-wide-1.webp" alt="Fashion Excellence" class="img-fluid rounded">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="aboutpage-team-section" data-aos="fade-up" data-aos-delay="100">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-8 mx-auto text-center mb-5">
+                     <span class="aboutpage-section-badge">
+                     <i class="bi bi-people-fill"></i>
+                     Our Team
+                     </span>
+                     <h2 class="aboutpage-section-title">Meet The Fashion Experts</h2>
+                     <p class="aboutpage-section-description">Our passionate team of fashion enthusiasts, stylists, and customer
+                        experience experts work tirelessly to bring you the best in contemporary fashion.
+                     </p>
+                  </div>
+               </div>
+               <div class="row g-4">
+                  <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                     <div class="aboutpage-team-card">
+                        <div class="aboutpage-team-image">
+                           <img src="assets/img/person/person-f-7.webp" alt="Sarah Chen" class="img-fluid">
+                           <div class="aboutpage-team-overlay">
+                              <div class="aboutpage-social-links">
+                                 <a href="#" class="aboutpage-social-link"><i class="bi bi-linkedin"></i></a>
+                                 <a href="#" class="aboutpage-social-link"><i class="bi bi-twitter"></i></a>
+                                 <a href="#" class="aboutpage-social-link"><i class="bi bi-instagram"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="aboutpage-team-content">
+                           <h3 class="aboutpage-team-name">Sarah Chen</h3>
+                           <p class="aboutpage-team-role">Creative Director</p>
+                           <p class="aboutpage-team-bio">With 12 years in fashion curation, Sarah leads our creative vision and
+                              trend forecasting initiatives.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                     <div class="aboutpage-team-card">
+                        <div class="aboutpage-team-image">
+                           <img src="assets/img/person/person-m-7.webp" alt="Marcus Johnson" class="img-fluid">
+                           <div class="aboutpage-team-overlay">
+                              <div class="aboutpage-social-links">
+                                 <a href="#" class="aboutpage-social-link"><i class="bi bi-linkedin"></i></a>
+                                 <a href="#" class="aboutpage-social-link"><i class="bi bi-twitter"></i></a>
+                                 <a href="#" class="aboutpage-social-link"><i class="bi bi-instagram"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="aboutpage-team-content">
+                           <h3 class="aboutpage-team-name">Marcus Johnson</h3>
+                           <p class="aboutpage-team-role">Operations Manager</p>
+                           <p class="aboutpage-team-bio">Marcus ensures seamless operations and exceptional customer experiences
+                              across all touchpoints.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                     <div class="aboutpage-team-card">
+                        <div class="aboutpage-team-image">
+                           <img src="assets/img/person/person-f-8.webp" alt="Elena Rodriguez" class="img-fluid">
+                           <div class="aboutpage-team-overlay">
+                              <div class="aboutpage-social-links">
+                                 <a href="#" class="aboutpage-social-link"><i class="bi bi-linkedin"></i></a>
+                                 <a href="#" class="aboutpage-social-link"><i class="bi bi-twitter"></i></a>
+                                 <a href="#" class="aboutpage-social-link"><i class="bi bi-instagram"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="aboutpage-team-content">
+                           <h3 class="aboutpage-team-name">Elena Rodriguez</h3>
+                           <p class="aboutpage-team-role">Senior Stylist</p>
+                           <p class="aboutpage-team-bio">Elena brings high-fashion expertise and personalized styling services to
+                              help customers find their perfect look.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="aboutpage-achievements-section light-background" data-aos="fade-up" data-aos-delay="100">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-6 mx-auto text-center mb-5">
+                     <span class="aboutpage-section-badge">
+                     <i class="bi bi-trophy-fill"></i>
+                     Our Achievements
+                     </span>
+                     <h2 class="aboutpage-section-title">Making Fashion Dreams Reality</h2>
+                  </div>
+               </div>
+               <div class="row g-4">
+                  <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                     <div class="aboutpage-achievement-card">
+                        <div class="aboutpage-achievement-icon">
+                           <i class="bi bi-heart-fill"></i>
+                        </div>
+                        <div class="aboutpage-achievement-number">
+                           <span data-purecounter-start="0" data-purecounter-end="50000" data-purecounter-duration="2"
+                              class="purecounter"></span>
+                           <span class="aboutpage-number-suffix">+</span>
+                        </div>
+                        <h3 class="aboutpage-achievement-title">Happy Customers</h3>
+                        <p class="aboutpage-achievement-description">Satisfied customers who love their fashion choices</p>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                     <div class="aboutpage-achievement-card">
+                        <div class="aboutpage-achievement-icon">
+                           <i class="bi bi-bag-fill"></i>
+                        </div>
+                        <div class="aboutpage-achievement-number">
+                           <span data-purecounter-start="0" data-purecounter-end="150000" data-purecounter-duration="2"
+                              class="purecounter"></span>
+                           <span class="aboutpage-number-suffix">+</span>
+                        </div>
+                        <h3 class="aboutpage-achievement-title">Orders Delivered</h3>
+                        <p class="aboutpage-achievement-description">Successfully delivered fashion pieces worldwide</p>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                     <div class="aboutpage-achievement-card">
+                        <div class="aboutpage-achievement-icon">
+                           <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div class="aboutpage-achievement-number">
+                           <span data-purecounter-start="0" data-purecounter-end="98" data-purecounter-duration="2"
+                              class="purecounter"></span>
+                           <span class="aboutpage-number-suffix">%</span>
+                        </div>
+                        <h3 class="aboutpage-achievement-title">Satisfaction Rate</h3>
+                        <p class="aboutpage-achievement-description">Customer satisfaction rate based on reviews</p>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                     <div class="aboutpage-achievement-card">
+                        <div class="aboutpage-achievement-icon">
+                           <i class="bi bi-globe"></i>
+                        </div>
+                        <div class="aboutpage-achievement-number">
+                           <span data-purecounter-start="0" data-purecounter-end="45" data-purecounter-duration="2"
+                              class="purecounter"></span>
+                           <span class="aboutpage-number-suffix">+</span>
+                        </div>
+                        <h3 class="aboutpage-achievement-title">Countries Served</h3>
+                        <p class="aboutpage-achievement-description">Global reach across multiple continents</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="aboutpage-testimonials-section" data-aos="fade-up" data-aos-delay="100">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-8 mx-auto text-center mb-5">
+                     <span class="aboutpage-section-badge">
+                     <i class="bi bi-chat-heart-fill"></i>
+                     Customer Stories
+                     </span>
+                     <h2 class="aboutpage-section-title">What Our Customers Say</h2>
+                     <p class="aboutpage-section-description">Real stories from fashion lovers who've found their perfect style
+                        with TrendHive.
+                     </p>
+                  </div>
+               </div>
+               <div class="aboutpage-testimonials-grid">
+                  <div class="aboutpage-testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                     <div class="aboutpage-testimonial-content">
+                        <div class="aboutpage-stars-rating">
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="aboutpage-testimonial-text">"TrendHive has completely transformed my wardrobe! The quality is
+                           exceptional and the styling advice helped me find my perfect look. I've never felt more confident in my
+                           clothing choices."
+                        </p>
+                        <div class="aboutpage-customer-info">
+                           <img src="assets/img/person/person-f-3.webp" alt="Jessica Miller" class="aboutpage-customer-photo">
+                           <div class="aboutpage-customer-details">
+                              <h4 class="aboutpage-customer-name">Jessica Miller</h4>
+                              <p class="aboutpage-customer-location">New York, USA</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="aboutpage-testimonial-card aboutpage-testimonial-featured" data-aos="fade-up"
+                     data-aos-delay="300">
+                     <div class="aboutpage-testimonial-content">
+                        <div class="aboutpage-stars-rating">
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="aboutpage-testimonial-text">"The customer service is outstanding, and the fashion pieces are
+                           exactly as described. Fast shipping and beautiful packaging made the whole experience delightful. Highly
+                           recommend TrendHive to anyone looking for premium fashion!"
+                        </p>
+                        <div class="aboutpage-customer-info">
+                           <img src="assets/img/person/person-m-5.webp" alt="David Thompson" class="aboutpage-customer-photo">
+                           <div class="aboutpage-customer-details">
+                              <h4 class="aboutpage-customer-name">David Thompson</h4>
+                              <p class="aboutpage-customer-location">London, UK</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="aboutpage-testimonial-card" data-aos="fade-up" data-aos-delay="400">
+                     <div class="aboutpage-testimonial-content">
+                        <div class="aboutpage-stars-rating">
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="aboutpage-testimonial-text">"I love that TrendHive focuses on sustainable fashion without
+                           compromising on style. Every piece I've purchased has been worth the investment. They truly care about
+                           quality and environmental responsibility."
+                        </p>
+                        <div class="aboutpage-customer-info">
+                           <img src="assets/img/person/person-f-9.webp" alt="Maria Garcia" class="aboutpage-customer-photo">
+                           <div class="aboutpage-customer-details">
+                              <h4 class="aboutpage-customer-name">Maria Garcia</h4>
+                              <p class="aboutpage-customer-location">Barcelona, Spain</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer id="footer" class="footer dark-background">
+         <div class="footer-main">
+            <div class="container">
+               <div class="row gy-4">
+                  <div class="col-lg-4 col-md-6">
+                     <div class="footer-widget footer-about">
+                        <a href="index.html" class="logo">
+                        <span class="sitename">TrendHive</span>
+                        </a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nibh vehicula, facilisis magna ut,
+                           consectetur lorem. Proin eget tortor risus.
+                        </p>
+                        <div class="social-links mt-4">
+                           <h5>Connect With Us</h5>
+                           <div class="social-icons">
+                              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                              <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                              <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                              <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+                              <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-2 col-md-6 col-sm-6">
+                     <div class="footer-widget">
+                        <h4>Shop</h4>
+                        <ul class="footer-links">
+                           <li><a href="category.html">New Arrivals</a></li>
+                           <li><a href="category.html">Bestsellers</a></li>
+                           <li><a href="category.html">Women's Clothing</a></li>
+                           <li><a href="category.html">Men's Clothing</a></li>
+                           <li><a href="category.html">Accessories</a></li>
+                           <li><a href="category.html">Sale</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-2 col-md-6 col-sm-6">
+                     <div class="footer-widget">
+                        <h4>Support</h4>
+                        <ul class="footer-links">
+                           <li><a href="#">Help Center</a></li>
+                           <li><a href="#">Order Status</a></li>
+                           <li><a href="#">Shipping Info</a></li>
+                           <li><a href="#">Returns &amp; Exchanges</a></li>
+                           <li><a href="#">Size Guide</a></li>
+                           <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="footer-widget">
+                        <h4>Contact Information</h4>
+                        <div class="footer-contact">
+                           <div class="contact-item">
+                              <i class="bi bi-geo-alt"></i>
+                              <span>123 Fashion Street, New York, NY 10001</span>
+                           </div>
+                           <div class="contact-item">
+                              <i class="bi bi-telephone"></i>
+                              <span>+1 (555) 123-4567</span>
+                           </div>
+                           <div class="contact-item">
+                              <i class="bi bi-envelope"></i>
+                              <span>hello@example.com</span>
+                           </div>
+                           <div class="contact-item">
+                              <i class="bi bi-clock"></i>
+                              <span>Monday-Friday: 9am-6pm<br>Saturday: 10am-4pm<br>Sunday: Closed</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-bottom">
+            <div class="container">
+               <div class="row gy-3 align-items-center">
+                  <div class="col-lg-12 col-md-12">
+                     <div class="copyright text-center">
+                        <p>© <span>Copyright</span> <strong class="sitename">TrendHive</strong>. All Rights Reserved.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+         class="bi bi-arrow-up-short"></i></a>
+      <div id="preloader"></div>
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/aos/aos.js"></script>
+      <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>

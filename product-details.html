@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <title>Product Details - TrendHive</title>
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+      <link href="assets/img/favicon.png" rel="icon">
+      <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+      <link href="https://fonts.googleapis.com" rel="preconnect">
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+         rel="stylesheet">
+      <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+      <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+      <link href="assets/css/main.css" rel="stylesheet">
+   </head>
+   <body class="product-details-page">
+      <header id="header" class="header sticky-top">
+         <div class="main-header">
+            <div class="container-fluid container-xl">
+               <div class="d-flex py-3 align-items-center justify-content-between">
+                  <a href="index.html" class="logo d-flex align-items-center">
+                     <h1 class="sitename">TrendHive</h1>
+                  </a>
+                  <form class="search-form desktop-search-form">
+                     <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for products">
+                        <button class="btn" type="submit">
+                        <i class="bi bi-search"></i>
+                        </button>
+                     </div>
+                  </form>
+                  <div class="header-actions d-flex align-items-center justify-content-end">
+                     <button class="header-action-btn mobile-search-toggle d-xl-none" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#mobileSearch" aria-expanded="false" aria-controls="mobileSearch">
+                     <i class="bi bi-search"></i>
+                     </button>
+                     <div class="dropdown account-dropdown">
+                        <button class="header-action-btn" data-bs-toggle="dropdown">
+                        <i class="bi bi-person"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                           <div class="dropdown-header">
+                              <h6>Welcome to <span class="sitename">TrendHive</span></h6>
+                              <p class="mb-0">Access account &amp; manage orders</p>
+                           </div>
+                           <div class="dropdown-body">
+                              <a class="dropdown-item d-flex align-items-center" href="#">
+                              <i class="bi bi-person-circle me-2"></i>
+                              <span>My Profile</span>
+                              </a>
+                              <a class="dropdown-item d-flex align-items-center" href="#">
+                              <i class="bi bi-bag-check me-2"></i>
+                              <span>My Orders</span>
+                              </a>
+                              <a class="dropdown-item d-flex align-items-center" href="#">
+                              <i class="bi bi-heart me-2"></i>
+                              <span>My Wishlist</span>
+                              </a>
+                              <a class="dropdown-item d-flex align-items-center" href="#">
+                              <i class="bi bi-gear me-2"></i>
+                              <span>Settings</span>
+                              </a>
+                           </div>
+                           <div class="dropdown-footer">
+                              <a href="#" class="btn btn-primary w-100 mb-2">Sign In</a>
+                              <a href="#" class="btn btn-outline-primary w-100">Register</a>
+                           </div>
+                        </div>
+                     </div>
+                     <a href="#" class="header-action-btn d-none d-md-block">
+                     <i class="bi bi-heart"></i>
+                     <span class="badge">0</span>
+                     </a>
+                     <a href="cart.html" class="header-action-btn">
+                     <i class="bi bi-cart3"></i>
+                     <span class="badge">3</span>
+                     </a>
+                     <i class="mobile-nav-toggle d-xl-none bi bi-list me-0"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="header-nav">
+            <div class="container-fluid container-xl position-relative">
+               <nav id="navmenu" class="navmenu">
+                  <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="about.html">About</a></li>
+                     <li><a href="category.html">Category</a></li>
+                     <li><a href="product-details.html" class="active">Product Details</a></li>
+                     <li><a href="contact.html">Contact</a></li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+         <div class="collapse" id="mobileSearch">
+            <div class="container">
+               <form class="search-form">
+                  <div class="input-group">
+                     <input type="text" class="form-control" placeholder="Search for products">
+                     <button class="btn" type="submit">
+                     <i class="bi bi-search"></i>
+                     </button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </header>
+      <main class="main">
+         <div class="page-title light-background">
+            <div class="container d-lg-flex justify-content-between align-items-center">
+               <h1 class="mb-2 mb-lg-0">Product Details</h1>
+               <nav class="breadcrumbs">
+                  <ol>
+                     <li><a href="index.html">Home</a></li>
+                     <li class="current">Product Details</li>
+                  </ol>
+               </nav>
+            </div>
+         </div>
+         <div class="pdpage-product-section" data-aos="fade-up" data-aos-delay="100">
+            <div class="container">
+               <div class="row g-4">
+                  <div class="col-lg-7" data-aos="zoom-in" data-aos-delay="150">
+                     <div class="pdpage-gallery-container">
+                        <div class="pdpage-product-badges">
+                           <span class="pdpage-badge pdpage-badge-new">New Arrival</span>
+                           <span class="pdpage-badge pdpage-badge-sale">-25% Off</span>
+                        </div>
+                        <div class="pdpage-main-display">
+                           <div class="pdpage-image-wrapper">
+                              <img src="assets/img/product/product-details-6.webp" alt="Premium Cotton T-Shirt"
+                                 class="pdpage-main-image" id="pdpage-main-image"
+                                 data-zoom="assets/img/product/product-details-6.webp">
+                              <div class="pdpage-image-controls">
+                                 <button class="pdpage-nav-btn pdpage-prev-btn" type="button">
+                                 <i class="bi bi-chevron-left"></i>
+                                 </button>
+                                 <button class="pdpage-nav-btn pdpage-next-btn" type="button">
+                                 <i class="bi bi-chevron-right"></i>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="pdpage-thumbnails-grid">
+                           <div class="pdpage-thumbnail-item active" data-image="assets/img/product/product-details-6.webp">
+                              <img src="assets/img/product/product-details-6.webp" alt="Front View" class="pdpage-thumb-img">
+                           </div>
+                           <div class="pdpage-thumbnail-item" data-image="assets/img/product/product-details-7.webp">
+                              <img src="assets/img/product/product-details-7.webp" alt="Back View" class="pdpage-thumb-img">
+                           </div>
+                           <div class="pdpage-thumbnail-item" data-image="assets/img/product/product-details-8.webp">
+                              <img src="assets/img/product/product-details-8.webp" alt="Side View" class="pdpage-thumb-img">
+                           </div>
+                           <div class="pdpage-thumbnail-item" data-image="assets/img/product/product-details-4.webp">
+                              <img src="assets/img/product/product-details-4.webp" alt="Detail View" class="pdpage-thumb-img">
+                           </div>
+                           <div class="pdpage-thumbnail-item" data-image="assets/img/product/product-details-5.webp">
+                              <img src="assets/img/product/product-details-5.webp" alt="Style View" class="pdpage-thumb-img">
+                           </div>
+                           <div class="pdpage-thumbnail-item" data-image="assets/img/product/product-details-3.webp">
+                              <img src="assets/img/product/product-details-3.webp" alt="Fit View" class="pdpage-thumb-img">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-5" data-aos="fade-left" data-aos-delay="200">
+                     <div class="pdpage-product-info">
+                        <div class="pdpage-brand-section">
+                           <span class="pdpage-brand-name">Premium Fashion</span>
+                           <div class="pdpage-rating-display">
+                              <div class="pdpage-stars">
+                                 <i class="bi bi-star-fill"></i>
+                                 <i class="bi bi-star-fill"></i>
+                                 <i class="bi bi-star-fill"></i>
+                                 <i class="bi bi-star-fill"></i>
+                                 <i class="bi bi-star-half"></i>
+                              </div>
+                              <span class="pdpage-review-count">4.8 (247 reviews)</span>
+                           </div>
+                        </div>
+                        <h1 class="pdpage-product-title">Premium Cotton Blend T-Shirt</h1>
+                        <p class="pdpage-product-subtitle">Comfortable everyday essential with modern fit</p>
+                        <div class="pdpage-pricing-section">
+                           <div class="pdpage-price-group">
+                              <span class="pdpage-current-price">$39.99</span>
+                              <span class="pdpage-original-price">$52.99</span>
+                              <span class="pdpage-discount-badge">Save 25%</span>
+                           </div>
+                           <div class="pdpage-price-details">
+                              <span class="pdpage-tax-info">Inclusive of all taxes</span>
+                           </div>
+                        </div>
+                        <div class="pdpage-description">
+                           <p>Crafted from premium cotton blend fabric, this versatile t-shirt offers exceptional comfort and
+                              style. Perfect for casual wear or layering, featuring a modern fit that flatters all body types.
+                           </p>
+                        </div>
+                        <div class="pdpage-variant-section">
+                           <div class="pdpage-size-selection">
+                              <label class="pdpage-variant-label">Size:</label>
+                              <div class="pdpage-size-grid">
+                                 <div class="pdpage-size-option" data-size="XS">XS</div>
+                                 <div class="pdpage-size-option" data-size="S">S</div>
+                                 <div class="pdpage-size-option active" data-size="M">M</div>
+                                 <div class="pdpage-size-option" data-size="L">L</div>
+                                 <div class="pdpage-size-option" data-size="XL">XL</div>
+                                 <div class="pdpage-size-option" data-size="XXL">XXL</div>
+                              </div>
+                              <a href="#" class="pdpage-size-guide">Size Guide</a>
+                           </div>
+                           <div class="pdpage-color-selection">
+                              <label class="pdpage-variant-label">Color: <span class="pdpage-selected-color">Midnight
+                              Black</span></label>
+                              <div class="pdpage-color-options">
+                                 <div class="pdpage-color-chip active" data-color="Midnight Black" style="background: #1a1a1a;">
+                                    <span class="pdpage-color-check"><i class="bi bi-check"></i></span>
+                                 </div>
+                                 <div class="pdpage-color-chip" data-color="Classic White" style="background: #ffffff;">
+                                    <span class="pdpage-color-check"><i class="bi bi-check"></i></span>
+                                 </div>
+                                 <div class="pdpage-color-chip" data-color="Navy Blue" style="background: #1e3a8a;">
+                                    <span class="pdpage-color-check"><i class="bi bi-check"></i></span>
+                                 </div>
+                                 <div class="pdpage-color-chip" data-color="Heather Gray" style="background: #6b7280;">
+                                    <span class="pdpage-color-check"><i class="bi bi-check"></i></span>
+                                 </div>
+                                 <div class="pdpage-color-chip" data-color="Forest Green" style="background: #059669;">
+                                    <span class="pdpage-color-check"><i class="bi bi-check"></i></span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="pdpage-purchase-section">
+                           <div class="pdpage-action-buttons">
+                              <button class="pdpage-btn pdpage-btn-primary">
+                              <i class="bi bi-bag-plus"></i>
+                              <span>Add to Bag</span>
+                              </button>
+                              <button class="pdpage-btn pdpage-btn-secondary">
+                              <i class="bi bi-heart"></i>
+                              <span>Wishlist</span>
+                              </button>
+                           </div>
+                           <button class="pdpage-btn pdpage-btn-buy-now">
+                           <i class="bi bi-lightning-fill"></i>
+                           <span>Buy Now</span>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row mt-5" data-aos="fade-up" data-aos-delay="300">
+                  <div class="col-12">
+                     <div class="pdpage-tabs-container">
+                        <nav class="pdpage-tabs-nav nav">
+                           <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#pdpage-overview"
+                              type="button">Product Details</button>
+                           <button class="nav-link" data-bs-toggle="tab" data-bs-target="#pdpage-care" type="button">Care
+                           Instructions</button>
+                           <button class="nav-link" data-bs-toggle="tab" data-bs-target="#pdpage-sizing" type="button">Size &
+                           Fit</button>
+                           <button class="nav-link" data-bs-toggle="tab" data-bs-target="#pdpage-reviews" type="button">Reviews
+                           (247)</button>
+                        </nav>
+                        <div class="tab-content pdpage-tab-content">
+                           <div class="tab-pane fade show active" id="pdpage-overview">
+                              <div class="pdpage-overview-content">
+                                 <div class="row g-4">
+                                    <div class="col-lg-12">
+                                       <div class="pdpage-details-section">
+                                          <h3 class="pdpage-section-title">Product Description</h3>
+                                          <p class="pdpage-description-text">This premium cotton blend t-shirt combines comfort with
+                                             contemporary style. Crafted from 60% organic cotton and 40% recycled polyester, it offers
+                                             exceptional breathability and durability. The modern fit provides a flattering silhouette
+                                             while ensuring all-day comfort.
+                                          </p>
+                                          <div class="pdpage-specs-section">
+                                             <h4 class="pdpage-subsection-title">Product Specifications</h4>
+                                             <div class="pdpage-specs-list">
+                                                <div class="pdpage-spec-item">
+                                                   <span class="pdpage-spec-label">Material</span>
+                                                   <span class="pdpage-spec-value">60% Organic Cotton, 40% Recycled Polyester</span>
+                                                </div>
+                                                <div class="pdpage-spec-item">
+                                                   <span class="pdpage-spec-label">Weight</span>
+                                                   <span class="pdpage-spec-value">180 GSM</span>
+                                                </div>
+                                                <div class="pdpage-spec-item">
+                                                   <span class="pdpage-spec-label">Fit</span>
+                                                   <span class="pdpage-spec-value">Modern Regular Fit</span>
+                                                </div>
+                                                <div class="pdpage-spec-item">
+                                                   <span class="pdpage-spec-label">Neck Style</span>
+                                                   <span class="pdpage-spec-value">Round Neck</span>
+                                                </div>
+                                                <div class="pdpage-spec-item">
+                                                   <span class="pdpage-spec-label">Sleeve Type</span>
+                                                   <span class="pdpage-spec-value">Short Sleeve</span>
+                                                </div>
+                                                <div class="pdpage-spec-item">
+                                                   <span class="pdpage-spec-label">Country of Origin</span>
+                                                   <span class="pdpage-spec-value">Made in India</span>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <h4 class="pdpage-subsection-title mt-4">Key Features</h4>
+                                          <div class="pdpage-features-grid">
+                                             <div class="pdpage-feature-card">
+                                                <i class="bi bi-award"></i>
+                                                <h5>Premium Fabric</h5>
+                                                <p>Soft organic cotton blend with moisture-wicking properties</p>
+                                             </div>
+                                             <div class="pdpage-feature-card">
+                                                <i class="bi bi-scissors"></i>
+                                                <h5>Modern Fit</h5>
+                                                <p>Tailored cut that flatters all body types</p>
+                                             </div>
+                                             <div class="pdpage-feature-card">
+                                                <i class="bi bi-droplet"></i>
+                                                <h5>Easy Care</h5>
+                                                <p>Machine washable with color-fast technology</p>
+                                             </div>
+                                             <div class="pdpage-feature-card">
+                                                <i class="bi bi-recycle"></i>
+                                                <h5>Eco-Friendly</h5>
+                                                <p>Made from sustainable and recycled materials</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="pdpage-care">
+                              <div class="pdpage-care-content">
+                                 <div class="row g-4">
+                                    <div class="col-md-6">
+                                       <div class="pdpage-care-group">
+                                          <h4 class="pdpage-subsection-title">Washing Instructions</h4>
+                                          <div class="pdpage-care-list">
+                                             <div class="pdpage-care-item">
+                                                <i class="bi bi-droplet"></i>
+                                                <span>Machine wash cold (30°C max)</span>
+                                             </div>
+                                             <div class="pdpage-care-item">
+                                                <i class="bi bi-palette"></i>
+                                                <span>Wash with similar colors</span>
+                                             </div>
+                                             <div class="pdpage-care-item">
+                                                <i class="bi bi-x-circle"></i>
+                                                <span>Do not bleach</span>
+                                             </div>
+                                             <div class="pdpage-care-item">
+                                                <i class="bi bi-sun"></i>
+                                                <span>Tumble dry low heat</span>
+                                             </div>
+                                             <div class="pdpage-care-item">
+                                                <i class="bi bi-thermometer-low"></i>
+                                                <span>Iron on low temperature if needed</span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <div class="pdpage-care-group">
+                                          <h4 class="pdpage-subsection-title">Storage Tips</h4>
+                                          <div class="pdpage-care-list">
+                                             <div class="pdpage-care-item">
+                                                <i class="bi bi-house"></i>
+                                                <span>Store in cool, dry place</span>
+                                             </div>
+                                             <div class="pdpage-care-item">
+                                                <i class="bi bi-folder"></i>
+                                                <span>Fold neatly to prevent wrinkles</span>
+                                             </div>
+                                             <div class="pdpage-care-item">
+                                                <i class="bi bi-shield-check"></i>
+                                                <span>Avoid direct sunlight for storage</span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-12">
+                                       <div class="pdpage-care-tips">
+                                          <h4 class="pdpage-subsection-title">Care Tips for Longevity</h4>
+                                          <div class="pdpage-tips-grid">
+                                             <div class="pdpage-tip-card">
+                                                <i class="bi bi-star"></i>
+                                                <h5>First Wash</h5>
+                                                <p>Wash separately for the first time to prevent color bleeding</p>
+                                             </div>
+                                             <div class="pdpage-tip-card">
+                                                <i class="bi bi-heart"></i>
+                                                <h5>Fabric Softener</h5>
+                                                <p>Use sparingly to maintain fabric texture and breathability</p>
+                                             </div>
+                                             <div class="pdpage-tip-card">
+                                                <i class="bi bi-clock"></i>
+                                                <h5>Drying Time</h5>
+                                                <p>Allow to air dry when possible for best fabric care</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="pdpage-sizing">
+                              <div class="pdpage-sizing-content">
+                                 <div class="row g-4">
+                                    <div class="col-lg-8">
+                                       <h4 class="pdpage-subsection-title">Size Chart</h4>
+                                       <div class="pdpage-size-chart">
+                                          <table class="pdpage-size-table">
+                                             <thead>
+                                                <tr>
+                                                   <th>Size</th>
+                                                   <th>Chest (inches)</th>
+                                                   <th>Length (inches)</th>
+                                                   <th>Shoulder (inches)</th>
+                                                </tr>
+                                             </thead>
+                                             <tbody>
+                                                <tr>
+                                                   <td><strong>XS</strong></td>
+                                                   <td>34-36</td>
+                                                   <td>26</td>
+                                                   <td>16</td>
+                                                </tr>
+                                                <tr>
+                                                   <td><strong>S</strong></td>
+                                                   <td>36-38</td>
+                                                   <td>27</td>
+                                                   <td>17</td>
+                                                </tr>
+                                                <tr class="pdpage-recommended">
+                                                   <td><strong>M</strong></td>
+                                                   <td>38-40</td>
+                                                   <td>28</td>
+                                                   <td>18</td>
+                                                </tr>
+                                                <tr>
+                                                   <td><strong>L</strong></td>
+                                                   <td>40-42</td>
+                                                   <td>29</td>
+                                                   <td>19</td>
+                                                </tr>
+                                                <tr>
+                                                   <td><strong>XL</strong></td>
+                                                   <td>42-44</td>
+                                                   <td>30</td>
+                                                   <td>20</td>
+                                                </tr>
+                                                <tr>
+                                                   <td><strong>XXL</strong></td>
+                                                   <td>44-46</td>
+                                                   <td>31</td>
+                                                   <td>21</td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                       <div class="pdpage-fit-guide">
+                                          <h4 class="pdpage-subsection-title">Fit Guide</h4>
+                                          <div class="pdpage-fit-info">
+                                             <div class="pdpage-fit-item">
+                                                <i class="bi bi-rulers"></i>
+                                                <div>
+                                                   <strong>How to Measure</strong>
+                                                   <p>Measure around the fullest part of your chest, keeping the tape level</p>
+                                                </div>
+                                             </div>
+                                             <div class="pdpage-fit-item">
+                                                <i class="bi bi-person-check"></i>
+                                                <div>
+                                                   <strong>Fit Type</strong>
+                                                   <p>Modern regular fit - not too loose, not too tight</p>
+                                                </div>
+                                             </div>
+                                             <div class="pdpage-fit-item">
+                                                <i class="bi bi-arrows-vertical"></i>
+                                                <div>
+                                                   <strong>Model Info</strong>
+                                                   <p>Model is 6'0" wearing size M</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="pdpage-reviews">
+                              <div class="pdpage-reviews-content">
+                                 <div class="pdpage-reviews-header">
+                                    <div class="pdpage-rating-overview">
+                                       <div class="pdpage-average-score">
+                                          <div class="pdpage-score-display">4.8</div>
+                                          <div class="pdpage-score-stars">
+                                             <i class="bi bi-star-fill"></i>
+                                             <i class="bi bi-star-fill"></i>
+                                             <i class="bi bi-star-fill"></i>
+                                             <i class="bi bi-star-fill"></i>
+                                             <i class="bi bi-star-half"></i>
+                                          </div>
+                                          <div class="pdpage-total-reviews">Based on 247 customer reviews</div>
+                                       </div>
+                                       <div class="pdpage-rating-distribution">
+                                          <div class="pdpage-rating-row">
+                                             <span class="pdpage-stars-label">5★</span>
+                                             <div class="pdpage-progress-container">
+                                                <div class="pdpage-progress-fill" style="width: 72%;"></div>
+                                             </div>
+                                             <span class="pdpage-count-label">178</span>
+                                          </div>
+                                          <div class="pdpage-rating-row">
+                                             <span class="pdpage-stars-label">4★</span>
+                                             <div class="pdpage-progress-container">
+                                                <div class="pdpage-progress-fill" style="width: 18%;"></div>
+                                             </div>
+                                             <span class="pdpage-count-label">44</span>
+                                          </div>
+                                          <div class="pdpage-rating-row">
+                                             <span class="pdpage-stars-label">3★</span>
+                                             <div class="pdpage-progress-container">
+                                                <div class="pdpage-progress-fill" style="width: 6%;"></div>
+                                             </div>
+                                             <span class="pdpage-count-label">15</span>
+                                          </div>
+                                          <div class="pdpage-rating-row">
+                                             <span class="pdpage-stars-label">2★</span>
+                                             <div class="pdpage-progress-container">
+                                                <div class="pdpage-progress-fill" style="width: 3%;"></div>
+                                             </div>
+                                             <span class="pdpage-count-label">7</span>
+                                          </div>
+                                          <div class="pdpage-rating-row">
+                                             <span class="pdpage-stars-label">1★</span>
+                                             <div class="pdpage-progress-container">
+                                                <div class="pdpage-progress-fill" style="width: 1%;"></div>
+                                             </div>
+                                             <span class="pdpage-count-label">3</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="pdpage-reviews-list">
+                                    <div class="pdpage-review-card">
+                                       <div class="pdpage-reviewer-profile">
+                                          <img src="assets/img/person/person-f-3.webp" alt="Customer" class="pdpage-profile-pic">
+                                          <div class="pdpage-profile-details">
+                                             <div class="pdpage-customer-name">Sarah Johnson</div>
+                                             <div class="pdpage-review-meta">
+                                                <div class="pdpage-review-stars">
+                                                   <i class="bi bi-star-fill"></i>
+                                                   <i class="bi bi-star-fill"></i>
+                                                   <i class="bi bi-star-fill"></i>
+                                                   <i class="bi bi-star-fill"></i>
+                                                   <i class="bi bi-star-fill"></i>
+                                                </div>
+                                                <span class="pdpage-review-date">March 28, 2024</span>
+                                                <span class="pdpage-verified-badge"><i class="bi bi-patch-check-fill"></i> Verified
+                                                Purchase</span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <h5 class="pdpage-review-headline">Perfect fit and amazing quality!</h5>
+                                       <div class="pdpage-review-text">
+                                          <p>This t-shirt exceeded my expectations! The fabric is so soft and comfortable, perfect for
+                                             both casual wear and workouts. The fit is exactly as described and the quality is
+                                             outstanding. Will definitely order more colors!
+                                          </p>
+                                       </div>
+                                       <div class="pdpage-review-tags">
+                                          <span class="pdpage-tag">Size: M</span>
+                                          <span class="pdpage-tag">Color: Black</span>
+                                          <span class="pdpage-tag">True to size</span>
+                                       </div>
+                                       <div class="pdpage-review-actions">
+                                          <button class="pdpage-action-btn"><i class="bi bi-hand-thumbs-up"></i> Helpful (24)</button>
+                                          <button class="pdpage-action-btn"><i class="bi bi-chat-dots"></i> Reply</button>
+                                       </div>
+                                    </div>
+                                    <div class="pdpage-review-card">
+                                       <div class="pdpage-reviewer-profile">
+                                          <img src="assets/img/person/person-m-5.webp" alt="Customer" class="pdpage-profile-pic">
+                                          <div class="pdpage-profile-details">
+                                             <div class="pdpage-customer-name">Michael Chen</div>
+                                             <div class="pdpage-review-meta">
+                                                <div class="pdpage-review-stars">
+                                                   <i class="bi bi-star-fill"></i>
+                                                   <i class="bi bi-star-fill"></i>
+                                                   <i class="bi bi-star-fill"></i>
+                                                   <i class="bi bi-star-fill"></i>
+                                                   <i class="bi bi-star"></i>
+                                                </div>
+                                                <span class="pdpage-review-date">March 15, 2024</span>
+                                                <span class="pdpage-verified-badge"><i class="bi bi-patch-check-fill"></i> Verified
+                                                Purchase</span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <h5 class="pdpage-review-headline">Great quality, runs slightly large</h5>
+                                       <div class="pdpage-review-text">
+                                          <p>Really happy with this purchase. The fabric feels premium and the color hasn't faded after
+                                             multiple washes. Only thing to note is that it runs slightly larger than expected, so
+                                             consider sizing down if you prefer a fitted look.
+                                          </p>
+                                       </div>
+                                       <div class="pdpage-review-tags">
+                                          <span class="pdpage-tag">Size: L</span>
+                                          <span class="pdpage-tag">Color: Navy</span>
+                                          <span class="pdpage-tag">Runs large</span>
+                                       </div>
+                                       <div class="pdpage-review-actions">
+                                          <button class="pdpage-action-btn"><i class="bi bi-hand-thumbs-up"></i> Helpful (16)</button>
+                                          <button class="pdpage-action-btn"><i class="bi bi-chat-dots"></i> Reply</button>
+                                       </div>
+                                    </div>
+                                    <div class="pdpage-review-card">
+                                       <div class="pdpage-reviewer-profile">
+                                          <img src="assets/img/person/person-f-7.webp" alt="Customer" class="pdpage-profile-pic">
+                                          <div class="pdpage-profile-details">
+                                             <div class="pdpage-customer-name">Emma Rodriguez</div>
+                                             <div class="pdpage-review-meta">
+                                                <div class="pdpage-review-stars">
+                                                   <i class="bi bi-star-fill"></i>
+                                                   <i class="bi bi-star-fill"></i>
+                                                   <i class="bi bi-star-fill"></i>
+                                                   <i class="bi bi-star-fill"></i>
+                                                   <i class="bi bi-star-fill"></i>
+                                                </div>
+                                                <span class="pdpage-review-date">February 22, 2024</span>
+                                                <span class="pdpage-verified-badge"><i class="bi bi-patch-check-fill"></i> Verified
+                                                Purchase</span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <h5 class="pdpage-review-headline">Love the eco-friendly aspect!</h5>
+                                       <div class="pdpage-review-text">
+                                          <p>As someone who cares about sustainable fashion, I appreciate that this t-shirt is made from
+                                             organic cotton and recycled materials. Plus, it's incredibly comfortable and stylish. A
+                                             win-win!
+                                          </p>
+                                       </div>
+                                       <div class="pdpage-review-tags">
+                                          <span class="pdpage-tag">Size: S</span>
+                                          <span class="pdpage-tag">Color: White</span>
+                                          <span class="pdpage-tag">Eco-friendly</span>
+                                       </div>
+                                       <div class="pdpage-review-actions">
+                                          <button class="pdpage-action-btn"><i class="bi bi-hand-thumbs-up"></i> Helpful (19)</button>
+                                          <button class="pdpage-action-btn"><i class="bi bi-chat-dots"></i> Reply</button>
+                                       </div>
+                                    </div>
+                                    <div class="pdpage-load-more-section">
+                                       <button class="pdpage-btn pdpage-btn-outline">Show More Reviews</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer id="footer" class="footer dark-background">
+         <div class="footer-main">
+            <div class="container">
+               <div class="row gy-4">
+                  <div class="col-lg-4 col-md-6">
+                     <div class="footer-widget footer-about">
+                        <a href="index.html" class="logo">
+                        <span class="sitename">TrendHive</span>
+                        </a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nibh vehicula, facilisis magna ut,
+                           consectetur lorem. Proin eget tortor risus.
+                        </p>
+                        <div class="social-links mt-4">
+                           <h5>Connect With Us</h5>
+                           <div class="social-icons">
+                              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                              <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                              <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                              <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+                              <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-2 col-md-6 col-sm-6">
+                     <div class="footer-widget">
+                        <h4>Shop</h4>
+                        <ul class="footer-links">
+                           <li><a href="category.html">New Arrivals</a></li>
+                           <li><a href="category.html">Bestsellers</a></li>
+                           <li><a href="category.html">Women's Clothing</a></li>
+                           <li><a href="category.html">Men's Clothing</a></li>
+                           <li><a href="category.html">Accessories</a></li>
+                           <li><a href="category.html">Sale</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-2 col-md-6 col-sm-6">
+                     <div class="footer-widget">
+                        <h4>Support</h4>
+                        <ul class="footer-links">
+                           <li><a href="#">Help Center</a></li>
+                           <li><a href="#">Order Status</a></li>
+                           <li><a href="#">Shipping Info</a></li>
+                           <li><a href="#">Returns &amp; Exchanges</a></li>
+                           <li><a href="#">Size Guide</a></li>
+                           <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="footer-widget">
+                        <h4>Contact Information</h4>
+                        <div class="footer-contact">
+                           <div class="contact-item">
+                              <i class="bi bi-geo-alt"></i>
+                              <span>123 Fashion Street, New York, NY 10001</span>
+                           </div>
+                           <div class="contact-item">
+                              <i class="bi bi-telephone"></i>
+                              <span>+1 (555) 123-4567</span>
+                           </div>
+                           <div class="contact-item">
+                              <i class="bi bi-envelope"></i>
+                              <span>hello@example.com</span>
+                           </div>
+                           <div class="contact-item">
+                              <i class="bi bi-clock"></i>
+                              <span>Monday-Friday: 9am-6pm<br>Saturday: 10am-4pm<br>Sunday: Closed</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-bottom">
+            <div class="container">
+               <div class="row gy-3 align-items-center">
+                  <div class="col-lg-12 col-md-12">
+                     <div class="copyright text-center">
+                        <p>© <span>Copyright</span> <strong class="sitename">TrendHive</strong>. All Rights Reserved.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+         class="bi bi-arrow-up-short"></i></a>
+      <div id="preloader"></div>
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/aos/aos.js"></script>
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
